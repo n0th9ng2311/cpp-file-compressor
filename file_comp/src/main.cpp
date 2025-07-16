@@ -58,7 +58,6 @@ int main(int argc, const char * argv[]) {
       std::cout<<".flac detected... starting compression!\n";
       //handel the case
         break;
-
     case Type::AIFF :
       std::cout<<".aiff detected... starting compression!\n";
       //handel the case
@@ -84,7 +83,7 @@ int main(int argc, const char * argv[]) {
       //handel the case
         break;
 
-    case default:
+    default:
       std::cout<<"Unknown file_format\n";
         break;
   }
