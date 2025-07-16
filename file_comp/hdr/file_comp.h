@@ -10,23 +10,30 @@ namespace fs = std::filesystem;
 
 class File_compressor{
 private:
-  fs::path src_path{};
-  fs::path dst_path{};
+  fs::path m_src_path{};
+  fs::path m_dst_path{};
 public:
     File_compressor();
 
     void setSrc(fs::path path){
-      src_path = std::move(path);
+      m_src_path = std::move(path);
     }
     void setDst(fs::path path){
-      dst_path = std::move(path);
+      m_dst_path = std::move(path);
     }
 
-    void getSrc();
+    fs::path getSrc_path() const {return m_src_path;}
+    fs::path getDst_path() const {return m_dst_path;}
+
+
+    void getSrc_user();
   //reason in file_comp.cpp
-  //void getDst();
+  //void getDst_user();
 
     void choice();
+
+    int checkType() const;
+
 
 
 
