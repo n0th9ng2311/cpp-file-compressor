@@ -13,6 +13,7 @@
 #include<filesystem>
 #include<map>
 #include<unordered_map>
+#include<algorithm>
 
 
 #endif //COMMON_H

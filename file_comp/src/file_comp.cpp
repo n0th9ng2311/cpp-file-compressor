@@ -6,24 +6,7 @@
 
 //adding an enum class here to assist with the return of checkType() fcn, probably the result from that
 //will be fed into a switch statement that will handel the cases
-enum class Type : int
-{
-    NO_EXIST = -1,
-    TXT = 1,
-    PNG = 2,
-    JPG = 3,
-    BMP = 4,
-    TIFF = 5,
-    PSD = 6,
-    LOG = 7,
-    CSV = 8,
-    WAV = 9,
-    FLAC = 10,
-    AIFF = 11,
-    ISO = 12,
-    TAR = 13,
-    VHD = 14,
-};
+enum class Type;
 
 void fixCin() {
     std::cin.clear();
